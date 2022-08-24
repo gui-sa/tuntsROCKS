@@ -1,0 +1,12 @@
+{
+  "name": "tuntsrocks",
+  "version": "1.0.0",
+  "description": "An Representational State Trasfer Aplication Programming Interface (REST API) which gets information from a RESTFULL SERVER an outputs a XLSX file with NAME, CAPITAL, AREA, CURRENCIES.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Guilherme Salomao Agostini",
+  "license": "ISC"
+}

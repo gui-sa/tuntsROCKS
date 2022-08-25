@@ -146,18 +146,22 @@ fetch(url, settings)
 
         let width_name = 0;
         let width_capital = 0;
-        let width_area = 0;
-        let width_currencies = 0;
         
         for (let i=0; i< json.length;i++){
             //Name
             ws.cell(3+i, 1).string([text_modifier, json[i].name.official]).style(text_style);  
-            
+            if(json[i].name.official.length > width_name){
+                width_name = json[i].name.official.length
+            }
+
             //Capital
             if (typeof (json[i].capital) == 'undefined') {
                 ws.cell(3+i, 2).string([text_modifier, '-']).style(text_style);  
             }else{
                 ws.cell(3+i, 2).string([text_modifier, json[i].capital[0]]).style(text_style);  
+                if(json[i].capital[0].length > width_capital){
+                    width_capital = json[i].capital[0].length
+                }
             }
             
             //Area
@@ -174,7 +178,10 @@ fetch(url, settings)
                 currencies_text = currencies_text.substring(0,currencies_text.length-2);
                 ws.cell(3+i, 4).string([text_modifier, currencies_text]).style(text_style);  
             }
-            ws.column(1).setWidth(100);
         }
+        ws.column(1).setWidth(Math.ceil(width_name*0.8));
+        ws.column(2).setWidth(Math.ceil(width_capital*0.8));
+        ws.column(3).setWidth(Math.ceil(20));
+        ws.column(4).setWidth(Math.ceil(15));
         console.log("File Successfully created")
 });

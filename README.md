@@ -6,9 +6,9 @@ Name: Guilherme Salomao Agostini
 
 An Representational State Trasfer Aplication Programming Interface (REST API) which gets information from a RESTFULL SERVER and outputs a .XLSX file with NAME, CAPITAL, AREA, CURRENCIES.
 
-Coded using NODE JS:
--node-fetch version 2.X.X
--excel4node
+Coded using **NODE JS**:
+- node-fetch version 2.X.X
+- excel4node
 
 
 HOW TO USE:

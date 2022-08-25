@@ -20,7 +20,7 @@ git clone https://github.com/gui-sa/tuntsROCKS.git
 ```
 - Open the directory and in the terminal, run:
 ```
-cd tuntsROCK
+cd tuntsROCKS
 npm install
 
 ```

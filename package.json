@@ -1,12 +1,24 @@
 {
   "name": "tuntsrocks",
   "version": "1.0.0",
-  "description": "An Representational State Trasfer Aplication Programming Interface (REST API) which gets information from a RESTFULL SERVER an outputs a XLSX file with NAME, CAPITAL, AREA, CURRENCIES.",
+  "description": "An Representational State Trasfer Aplication Programming Interface (REST API) which gets information from a RESTFULL SERVER and outputs a .XLSX file with NAME, CAPITAL, AREA, CURRENCIES",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gui-sa/tuntsROCKS.git"
+  },
   "author": "Guilherme Salomao Agostini",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gui-sa/tuntsROCKS/issues"
+  },
+  "homepage": "https://github.com/gui-sa/tuntsROCKS#readme",
+  "dependencies": {
+    "excel4node": "^1.8.0",
+    "node-fetch": "^2.6.7"
+  }
 }

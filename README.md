@@ -1,7 +1,9 @@
 <h1 align="center"> Desafio TuntROCKS </h1>
 
 About me:
-Name: Guilherme Salomao Agostini
+- Name: **Guilherme Salomao Agostini**
+- E-mail for more: guilherme.salomaoagostini@gmail.com
+
 
 
 An Representational State Trasfer Aplication Programming Interface (REST API) which gets information from a RESTFULL SERVER and outputs a .XLSX file with NAME, CAPITAL, AREA, CURRENCIES.
